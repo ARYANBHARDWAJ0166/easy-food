@@ -1,0 +1,251 @@
+
+
+.header {
+    background-color: #010101; /* Change background color */
+    padding: 5px 20px; /* Reduced padding */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    margin-right: 20px; /* Space between logo and marquee */
+}
+
+.logo-img {
+    width: 80px; /* Adjust logo size */
+    height: auto;
+}
+
+.marquee {
+    overflow: hidden; /* Hide overflow for smooth effect */
+    white-space: nowrap; /* No line breaks */
+    flex-grow: 2; /* Allow marquee to take available space */
+}
+
+.marquee p {
+    display: inline-block;
+    animation: marquee 10s linear infinite; /* Marquee effect */
+    font-size: 40px; /* Font size for marquee text */
+    color: #fff; /* Text color */
+    font-weight: bolder; /* Make text bold */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Spacing between menu items */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(233, 19, 19); /* White text color */
+    padding: 8px 12px; /* Reduced padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-weight: bolder; /* Make menu text bold */
+    font-size: 30px;
+}
+
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten on hover */
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position relative to parent */
+    background-color: white; /* White background for dropdown */
+    min-width: 160px; /* Minimum width */
+    z-index: 1; /* Ensure it appears above other content */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+    color: #333; /* Dark text color for dropdown */
+    padding: 10px; /* Padding in dropdown */
+}
+
+.dropdown-content a:hover {
+    background-color: #d3ab19; /* Light background on hover */
+}
+
+
+
+
+/* General Section Styling */
+.collection-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.recipe-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.recipe-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-img {
+    height: 200px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+}
+
+.rating {
+    font-size: 1.2rem;
+    color: #ffcc00; /* Gold color for stars */
+}
+
+.recipe-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.recipe-btn:hover {
+    background-color: #ff6347; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .recipe-grid {
+        grid-template-columns: 1fr; /* 1 item per row */
+    }
+}
+
+.collection-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Grid for Collection Items */
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px;
+}
+
+/* Individual Collection Item */
+.collection-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.collection-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Food Image Styling */
+.collection-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.collection-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.collection-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* AOS Animation */
+[data-aos="flip-right"] {
+    transition: 0.6s ease-in-out;
+}
+
+[data-aos="flip-right"]:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 1024px) {
+    .collection-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .collection-grid {
+        grid-template-columns: 1fr; /* 1 item per row */
+    }
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+

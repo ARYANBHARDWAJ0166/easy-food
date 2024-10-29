@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color:goldenrod;
+    margin-top: 30px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #ff5a5f;
+}
+
+/* Maid Container and Cards */
+.maid-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.maid-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.maid-card:hover {
+    transform: scale(1.05);
+}
+
+.maid-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.maid-details {
+    padding: 15px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.book-btn {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.book-btn:hover {
+    background-color: #ff3d3d;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #0e0e0e, #f09c80);
+    color: white;
+    padding: 40px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    max-width: 300px;
+    margin: 20px;
+  }
+  
+  .footer-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ffdab9; 
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-icons img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid #ffdab9;
+    padding-top: 20px;
+  }
+  
+  
+  
+  
+    
+  
+  
+
